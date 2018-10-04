@@ -91,7 +91,7 @@ class Boids:
     def buttonPress(self, event):
         # leftclick to add boids
         if event.button is 1:
-            self.pos = np.concatenate((self.pos, np.array([[event.xdata, event.ydata]])), axis = 0)
+            self.pos = np.concatenate((self.pos, np.array([[event.xdata, event.ydata]],)), axis = 0)
 
             #gives it a random velocity
             angles = 2*maths.pi*np.random.rand(1)
